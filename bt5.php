@@ -3,13 +3,13 @@ class sap_xep_mang
 	{  
         protected $_asort;  
             
-        public function __construct(array $asort)  
+        public function __construct($asort)  
             {  
-            $this->_asort = $asort;  
+            $this->set_asort = $asort;  
             }  
         public function ham_sap_xep()  
             {  
-            $sorted = $this->_asort;  
+            $sorted = $this->set_asort;  
             sort($sorted);  
             return $sorted;  
             }  

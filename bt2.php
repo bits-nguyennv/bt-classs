@@ -21,7 +21,11 @@ class MyCalculator {
   
     public function divide() {  
       return $this->_fval / $this->_sval;  
-    }  
+    
+      if($sval==0){
+        echo "biểu thức vô ngĩa";
+      }
+    }
   }  
   $mycalc = new MyCalculator(12, 6);   
   echo $mycalc-> add(); 
